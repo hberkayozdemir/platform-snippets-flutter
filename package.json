@@ -7,6 +7,10 @@
     "vscode": "^1.82.0"
   },
   "icon": "logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hberkayozdemir/platform-snippets-flutter"
+  },
   "categories": [
     "Snippets"
   ],
