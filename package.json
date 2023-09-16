@@ -1,0 +1,21 @@
+{
+  "name": "platform-snippets-flutter",
+  "displayName": "PlatformSnippetsFlutter",
+  "description": "Helper snippets for flutter developers at platform.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "icon": "logo.png",
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "dart",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
