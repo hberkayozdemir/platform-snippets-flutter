@@ -1,16 +1,72 @@
 {
   "Create Repository Snippet": {
-    "prefix": "crep",
+    "prefix": "!cr",
     "body": [
       "import 'package:riverpod_annotation/riverpod_annotation.dart';",
       "",
-      "part '.g.dart';",
+      "part '${TM_FILENAME/(.*)\\..+$/$1/}.g.dart';",
       "/// Doc: ",
       "@Riverpod()",
-      "class Repo extends _$Repo {",
+      "class ${TM_FILENAME_BASE/((^|_)([a-z]))/${3:/capitalize}/g}Service extends _$${TM_FILENAME_BASE/((^|_)([a-z]))/${3:/capitalize}/g}Service {",
       "@override",
       " Future build() async {} ",
       "}"
-    ]
+    ],
+    "description": "Repository Create Snippet."
+  },
+  "Create Service Snippet": {
+    "prefix": "!csrv",
+    "body": [
+      "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+      "",
+      "part '${TM_FILENAME/(.*)\\..+$/$1/}.g.dart';",
+      "/// Doc: ",
+      "@Riverpod()",
+      "class ${TM_FILENAME_BASE/((^|_)([a-z]))/${3:/capitalize}/g}Service extends _$${TM_FILENAME_BASE/((^|_)([a-z]))/${3:/capitalize}/g}Service {",
+      "@override",
+      " Future build() async {} ",
+      "}"
+    ],
+    "description": "Controller Create Snippet."
+  },
+  "Create Service Snippet": {
+    "prefix": "!cc",
+    "body": [
+      "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+      "",
+      "part '${TM_FILENAME/(.*)\\..+$/$1/}.g.dart';",
+      "/// Doc: ",
+      "@Riverpod()",
+      "class ${TM_FILENAME_BASE/((^|_)([a-z]))/${3:/capitalize}/g}Controller extends _$${TM_FILENAME_BASE/((^|_)([a-z]))/${3:/capitalize}/g}Controller {",
+      "@override",
+      " Future build() async {} ",
+      "}"
+    ],
+    "description": "Controller Create Snippet."
+  },
+  "Create Service Snippet": {
+    "prefix": "!cvs",
+    "body": [
+      "import 'package:freezed_annotation/freezed_annotation.dart';",
+      "",
+      "part '${TM_FILENAME/(.*)\\..+$/$1/}.frezeed.dart';",
+      "/// Doc:${TM_FILENAME_BASE/((^|_)([a-z]))/${3:/capitalize}/g} ",
+      "@freezed",
+      "class ${TM_FILENAME_BASE/((^|_)([a-z]))/${3:/capitalize}/g}State with _$${TM_FILENAME_BASE/((^|_)([a-z]))/${3:/capitalize}/g}State {",
+      "const factory ${TM_FILENAME_BASE/((^|_)([a-z]))/${3:/capitalize}/g}State({",
+      "@Default({",
+      "'temp2': null,",
+      "'temp1': false,",
+      "})",
+      "Map<String, dynamic> formMap,",
+      "@Default(null) TextEditingController? temp2Controller,",
+      "@Default(null) TextEditingController? firstController,",
+      "@Default(false) bool triedSubmit,",
+      "@Default(null) UniqueKey? key,",
+      "@Default(false) bool isSubmitting,",
+      "}) = _${TM_FILENAME_BASE/((^|_)([a-z]))/${3:/capitalize}/g}State;",
+      "}"
+    ],
+    "description": "Controller Create Snippet."
   }
 }
