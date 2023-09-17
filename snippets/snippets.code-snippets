@@ -1,13 +1,13 @@
 {
   "Create Repository Snippet": {
-    "prefix": "!cr",
+    "prefix": "!crep",
     "body": [
       "import 'package:riverpod_annotation/riverpod_annotation.dart';",
       "",
       "part '${TM_FILENAME/(.*)\\..+$/$1/}.g.dart';",
       "/// Doc: ",
       "@Riverpod()",
-      "class ${TM_FILENAME_BASE/((^|_)([a-z]))/${3:/capitalize}/g}Service extends _$${TM_FILENAME_BASE/((^|_)([a-z]))/${3:/capitalize}/g}Service {",
+      "class ${TM_FILENAME_BASE/((^|_)([a-z]))/${3:/capitalize}/g}Repository extends _$${TM_FILENAME_BASE/((^|_)([a-z]))/${3:/capitalize}/g}Repository {",
       "@override",
       " Future build() async {} ",
       "}"
@@ -27,9 +27,9 @@
       " Future build() async {} ",
       "}"
     ],
-    "description": "Controller Create Snippet."
+    "description": "Service Create Snippet."
   },
-  "Create Service Snippet": {
+  "Create Controller Snippet": {
     "prefix": "!cc",
     "body": [
       "import 'package:riverpod_annotation/riverpod_annotation.dart';",
@@ -44,7 +44,7 @@
     ],
     "description": "Controller Create Snippet."
   },
-  "Create Service Snippet": {
+  "Create View State Snippet": {
     "prefix": "!cvs",
     "body": [
       "import 'package:freezed_annotation/freezed_annotation.dart';",
@@ -67,6 +67,6 @@
       "}) = _${TM_FILENAME_BASE/((^|_)([a-z]))/${3:/capitalize}/g}State;",
       "}"
     ],
-    "description": "Controller Create Snippet."
+    "description": "View State Create Snippet."
   }
 }
