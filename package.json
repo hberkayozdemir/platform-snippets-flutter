@@ -1,11 +1,12 @@
 {
-  "name": "platform-snippets-flutter",
-  "displayName": "PlatformSnippetsFlutter",
+  "name": "clean-arch-riverpod-generator-flutter",
+  "displayName": "Flutter Riverpod Clean Architecture(Generator) Snippets",
   "description": "Helper snippets for flutter developers at platform.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.82.0"
   },
+  "publisher": "HilmiBerkayOzdemir",
   "icon": "logo.png",
   "repository": {
     "type": "git",

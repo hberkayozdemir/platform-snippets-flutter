@@ -1,65 +1,63 @@
-# platform-snippets-flutter README
+# Finswipe Platform Snippets for Flutter
 
-This is the README for your extension "platform-snippets-flutter". After writing up a brief description, we recommend including the following sections.
+Welcome to the "platform-snippets-flutter" extension by Finswipe. This extension is designed to simplify Flutter development, focusing on generating Riverpod code snippets.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+This extension offers a collection of ready-to-use snippets for the swift and efficient generation of Riverpod code, adhering to best practices as shared in [this Riverpod introduction](https://codewithandrea.com/articles/flutter-app-architecture-riverpod-introduction/).
 
-For example if there is an image subfolder under your extension project workspace:
+![Riverpod Snippet Example](images/riverpod-snippet-example.png)
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+> **Tip:** Check out our animations to see the snippets in action, aiding in a better understanding.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- Latest version of Flutter installed.
+- Visual Studio Code.
+- Basic understanding of Riverpod (beneficial for optimal use).
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+This extension introduces the following settings:
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+- `finswipeSnippets.enable`: Turn on/off Finswipe snippets.
+- `finswipeSnippets.triggerPrefix`: Assign a custom prefix for activating the snippets.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Should you encounter any problems or have recommendations, please contact us at our [official Finswipe repository](https://finswipe.io/contact-us). We value your feedback!
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+Keep track of our updates for continuous improvement:
 
 ### 1.0.0
 
-Initial release of ...
+- Initial release of Finswipe Platform Snippets for Flutter.
 
 ### 1.0.1
 
-Fixed issue #.
+- Fixed snippet generation delay.
 
 ### 1.1.0
 
-Added features X, Y, and Z.
+- Introduced snippets for StateNotifier and FutureProvider.
 
 ---
 
 ## Working with Markdown
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+If you're looking to modify this README, consider using Visual Studio Code. Here are some editor shortcuts for convenience:
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+- Split the editor (Cmd+\ on macOS or Ctrl+\ on Windows and Linux).
+- Toggle preview (Shift+Cmd+V on macOS or Shift+Ctrl+V on Windows and Linux).
+- Press Ctrl+Space (Windows, Linux, macOS) for a list of Markdown snippets.
 
-## For more information
+## More Information
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+- [Finswipe's Official Site](https://finswipe.io/)
+- [An Introduction to Riverpod Architecture](https://codewithandrea.com/articles/flutter-app-architecture-riverpod-introduction/)
+- [VS Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+- [Reference for Markdown Syntax](https://help.github.com/articles/markdown-basics/)
 
-**Enjoy!**
+**Wishing you a smooth coding experience with Finswipe!**
